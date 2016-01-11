@@ -32,5 +32,6 @@ gradle/.launch/
 .AppleDouble
 .LSOverride
 .Trashes
+*.swp
 ehthumbs.db
 Thumbs.db
