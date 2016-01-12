@@ -72,7 +72,8 @@ public class OI {
 	public static final int LEFT_TRIGGER_AXIS = 2;
 	public static final int RIGHT_TRIGGER_AXIS = 3;
 
-    Joystick joystick = new Joystick(0);
+    public static Joystick joystick = new Joystick(0);
+    public static Joystick flight = new Joystick(0);
 
     public static double getForward(){
         return getRawAxis(LEFT_Y_AXIS);
