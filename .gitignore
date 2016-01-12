@@ -5,7 +5,7 @@ dist/
 lib/
 javadoc/
 sysProps.xml
-workbench.xmi
+workbench.xml
 
 # IDE
 *.ipr
@@ -19,6 +19,9 @@ tmp/
 .classpath
 /.idea
 .metadata
+build.properties
+build.xml
+.project
 
 # Toast/GradleRIO
 run/
