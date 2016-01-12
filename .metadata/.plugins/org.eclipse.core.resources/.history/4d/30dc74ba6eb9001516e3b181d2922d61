@@ -18,8 +18,6 @@ public class RobotMap {
 	public static final int REAR_RIGHT_MOTOR = 3;
     public static final int FRONT_SLIDE_MOTOR = 4;
     public static final int REAR_SLIDE_MOTOR = 5;
-    public static final int LEFT_ELEVATOR = 6;
-    public static final int RIGHT_ELEVATOR = 7;
 
     public static final Talon[] sliderMotors = {new Talon(FRONT_SLIDE_MOTOR), new Talon(REAR_SLIDE_MOTOR)};
     public static final Talon[] rightMotors  = {new Talon(FRONT_RIGHT_MOTOR), new Talon(REAR_RIGHT_MOTOR)};
