@@ -1,7 +1,6 @@
 INDEX VERSION 1.127+/Users/Suriya/Documents/RecycleRush_2015/.metadata/.plugins/org.eclipse.jdt.core
 3266567714.index
 450555687.index
-2530714223.index
 3004609673.index
 272178059.index
 3321539481.index
