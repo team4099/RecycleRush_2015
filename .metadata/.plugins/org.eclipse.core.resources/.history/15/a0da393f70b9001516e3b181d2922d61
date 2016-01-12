@@ -24,8 +24,7 @@ public class RobotMap {
     public static final Talon[] sliderMotors = {new Talon(FRONT_SLIDE_MOTOR), new Talon(REAR_SLIDE_MOTOR)};
     public static final Talon[] rightMotors  = {new Talon(FRONT_RIGHT_MOTOR), new Talon(REAR_RIGHT_MOTOR)};
     public static final Talon[] leftMotors   = {new Talon(FRONT_LEFT_MOTOR),  new Talon(REAR_LEFT_MOTOR)};
-    public static final Talon[] elevatorMotors = {new Talon(LEFT_ELEVATOR), new Talon(RIGHT_ELEVATOR)};
-    
+
     // If you are using multiple modules, make sure to define both the port
     // number and the module. For example you with a rangefinder:
     // public static int rangefinderPort = 1;

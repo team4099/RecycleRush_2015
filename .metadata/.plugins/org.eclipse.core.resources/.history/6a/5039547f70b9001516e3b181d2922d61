@@ -1,7 +1,6 @@
 
 package org.usfirst.frc.team4099.robot.subsystems;
 
-import org.usfirst.frc.team4099.robot.Robot;
 import org.usfirst.frc.team4099.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.Talon;
@@ -24,7 +23,8 @@ public class Elevator extends Subsystem {
     }
     
     public void move(float pow) {
-    	Robot.setAllMotors(motors, pow);
+    	left.set(pow/REDUCTION_FACTOR);
+    	right.set(pow/REDUCTION_FACTOR);
     }
 }
 

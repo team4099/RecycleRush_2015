@@ -1,7 +1,6 @@
 
 package org.usfirst.frc.team4099.robot.subsystems;
 
-import org.usfirst.frc.team4099.robot.Robot;
 import org.usfirst.frc.team4099.robot.RobotMap;
 
 import edu.wpi.first.wpilibj.Talon;
@@ -16,7 +15,8 @@ public class Elevator extends Subsystem {
 	public static final double ELEVATOR_MIN = 0.0;
 	public static final double REDUCTION_FACTOR = -1;
     
-	Talon[] motors = RobotMap.elevatorMotors;
+	Talon left = RobotMap.leftElevator;
+	Talon right = RobotMap.rightElevator;
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
@@ -24,7 +24,8 @@ public class Elevator extends Subsystem {
     }
     
     public void move(float pow) {
-    	Robot.setAllMotors(motors, pow);
+    	left.set(pow/REDUCTION_FACTOR);
+    	right.set(pow/REDUCTION_FACTOR);
     }
 }
 
