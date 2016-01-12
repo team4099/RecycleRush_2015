@@ -17,7 +17,7 @@ public class ElevatorMove extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	Robot.elevator.move(Robot.oi.flight.getSlider());
+    	Robot.elevator.move(Robot.oi.getSlider());
     }
 
     // Called repeatedly when this Command is scheduled to run

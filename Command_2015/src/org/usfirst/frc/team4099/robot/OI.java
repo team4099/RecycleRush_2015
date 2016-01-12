@@ -71,18 +71,13 @@ public class OI {
 	/* Trigger Axes */
 	public static final int LEFT_TRIGGER_AXIS = 2;
 	public static final int RIGHT_TRIGGER_AXIS = 3;
-
-    public static Joystick joystick = new Joystick(0);
-    public static Joystick flight = new Joystick(0);
-
-    public static double getForward(){
-        return getRawAxis(LEFT_Y_AXIS);
-    }
-
-    public static double getStrafe(){
-        return getRawAxis(LEFT_X_AXIS);
-    }
-    
+	
+	Joystick gamepad = new Joystick(0);
+	Joystick flight = new Joystick(1);
+	
+	public double getFlightSlider() {
+		return flight.getRawAxis(3)-1;
+	}
 
 }
 
