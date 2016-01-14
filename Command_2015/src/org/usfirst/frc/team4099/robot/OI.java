@@ -76,9 +76,13 @@ public class OI {
 	Joystick gamepad = new Joystick(0);
 	Joystick flight = new Joystick(1);
 	
-	public double getFlightSlider() {
-		return flight.getRawAxis(3)-1;
+	public Joystick getFlightSlider() {
+		return flight;
+		// when refrenced use getFlightSlider().getRawAxis(3)-1;
 	}
 
+	public Joystick getGamepad() {
+		return gamepad;
+	}
 }
 
