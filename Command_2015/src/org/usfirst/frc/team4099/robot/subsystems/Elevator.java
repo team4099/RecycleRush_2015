@@ -20,7 +20,7 @@ public class Elevator extends Subsystem {
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new ElevatorMove());
     }
     
     public void move(float pow) {

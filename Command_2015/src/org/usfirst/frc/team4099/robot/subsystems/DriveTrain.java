@@ -16,7 +16,7 @@ public class DriveTrain extends Subsystem {
 
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
-        //setDefaultCommand(new MySpecialCommand());
+        setDefaultCommand(new DriveWithJoysticks());
     }
 
     public void slideDrive(double forward, double strafe){
