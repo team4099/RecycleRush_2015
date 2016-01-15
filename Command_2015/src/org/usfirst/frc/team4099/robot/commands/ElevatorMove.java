@@ -8,7 +8,7 @@ import org.usfirst.frc.team4099.robot.Robot;
 /**
  *
  */
-public class ElevatorMove extends Command {
+public class ElevatorMove extends CommandBase {
 
     public ElevatorMove() {
         requires(Robot.elevator);
